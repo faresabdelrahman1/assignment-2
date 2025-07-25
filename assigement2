@@ -1,11 +1,29 @@
 package Main1 {
+import java.util.Scanner;
 
 abstract class Employee{
-
+abstract void work();
+}
+interface Eatable{
+void eat();
+}
+class Cheif implement Eatable{
+void eat(CheifName){
+System.out.print("Cheif"+cheifName+"is tasting the food.");
+}
+}
+class Waiter implement Eatable{
+void eat(WaiterName){
+System.out.print("Waiter"+WaiterName+"is having a quick meal break.");
+}
 }
 public class Main{
 public static void main (String[]args){
-
+Scanner input=new Scanner(System.in);
+String CheifName=nextline.String;
+String WaiterName=nextline.String;
+obj.Cheif=new Cheif(CheifName);
+obj.waiter=new waiter(WaiterName);
 }
 }
 }

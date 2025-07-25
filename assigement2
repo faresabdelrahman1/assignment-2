@@ -1,4 +1,3 @@
-package Main1 {
 import java.util.Scanner;
 
 abstract class Employee{
@@ -29,7 +28,7 @@ public class Main{
 public static void main (String[]args){
 
 Scanner input=new Scanner(System.in);
-String name=input.nextline();
+String name=input.nextLine();
 Chef objCh =new Chef(name); 
 Waiter objW =new Waiter(name);
 objCh.eat();
@@ -38,4 +37,4 @@ objW.eat();
 }
 }
 }
-}
+

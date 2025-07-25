@@ -12,7 +12,7 @@ Chef(String name){
 this.name =name;
 }
 public void eat(){
-System.out.print("Chef"+name+"is tasting the food.");
+System.out.print("Chef "+name+"is tasting the food.");
 }
 }
 class Waiter implements Eatable{
@@ -21,7 +21,7 @@ Waiter(String name){
 this.name =name;
 }
 public void eat(){
-System.out.print("Waiter"+name+"is having a quick meal break.");
+System.out.print("Waiter "+name+"is having a quick meal break.");
 }
 }
 public class Main{

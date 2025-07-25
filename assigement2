@@ -7,34 +7,34 @@ interface Eatable{
 public void eat();
 }
 class Chef implements Eatable{
-String name ;
-Chef(String name){
-this.name =name;
+String Chefname ;
+Chef(String Chefname){
+this.Chefname =Chefname;
 }
 public void eat(){
-System.out.print("Chef "+name+"is tasting the food.");
+System.out.print("Chef "+Chefname+" is tasting the food.");
 }
 }
 class Waiter implements Eatable{
-String name ;
-Waiter(String name){
-this.name =name;
+String Waitername ;
+Waiter(String Waitername){
+this.Waitername =Waitername;
 }
 public void eat(){
-System.out.print("Waiter "+name+"is having a quick meal break.");
+System.out.print("Waiter "+Waitername+" is having a quick meal break.");
 }
 }
 public class Main{
 public static void main (String[]args){
 
 Scanner input=new Scanner(System.in);
-String name=input.nextLine();
-Chef objCh =new Chef(name); 
-Waiter objW =new Waiter(name);
+String Chefname=input.nextLine();
+String Waitername=input.nextLine();
+Chef objCh =new Chef(Chefname); 
 objCh.eat();
+System.out.println();
+Waiter objW =new Waiter(Waitername);
 objW.eat();
 
 }
 }
-}
-

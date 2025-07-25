@@ -5,25 +5,37 @@ abstract class Employee{
 abstract void work();
 }
 interface Eatable{
-void eat();
+public void eat();
 }
-class Cheif implement Eatable{
-void eat(CheifName){
-System.out.print("Cheif"+cheifName+"is tasting the food.");
+class Chef implements Eatable{
+String name ;
+Chef(String name){
+this.name =name;
+}
+public void eat(){
+System.out.print("Chef"+name+"is tasting the food.");
 }
 }
-class Waiter implement Eatable{
-void eat(WaiterName){
-System.out.print("Waiter"+WaiterName+"is having a quick meal break.");
+class Waiter implements Eatable{
+String name ;
+Waiter(String name){
+this.name =name;
+}
+public void eat(){
+System.out.print("Waiter"+name+"is having a quick meal break.");
 }
 }
 public class Main{
 public static void main (String[]args){
+
 Scanner input=new Scanner(System.in);
-String CheifName=nextline.String;
-String WaiterName=nextline.String;
-obj.Cheif=new Cheif(CheifName);
-obj.waiter=new waiter(WaiterName);
+String name=input.nextline();
+Chef objCh =new Chef(name); 
+Waiter objW =new Waiter(name);
+objCh.eat();
+objW.eat();
+
+}
 }
 }
 }
